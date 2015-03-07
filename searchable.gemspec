@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'searchable'
-  spec.version       = '0.1.0'
+  spec.version       = '0.2.0'
   spec.authors       = ['Tim Bleck']
   spec.email         = ['tim@moviepilot.com']
   spec.summary       = %q{Elasticsearch integration for rails.}
@@ -24,6 +24,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'rails'
   spec.add_runtime_dependency 'hashr', '~> 0.0.22'
-  spec.add_runtime_dependency 'elasticsearch', '~> 0.4.7'
+  spec.add_runtime_dependency 'elasticsearch', '~> 1.0.8'
   spec.add_runtime_dependency 'ruby-progressbar', '~> 1.2.0'
 end
