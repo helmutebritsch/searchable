@@ -75,6 +75,10 @@ module Searchable
       Client.search({type: self.name.underscore, body: body}, page)
     end
 
+    def raw_search(body, page = 1)
+      Client.raw_search({type: self.name.underscore, body: body}, page)
+    end
+
     # searchable DSL
 
     def index(attribute, mapping = nil, &block)

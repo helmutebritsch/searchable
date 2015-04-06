@@ -39,6 +39,10 @@ module Searchable
       results
     end
 
+    def self.raw_search(arguments, page = 1)
+      response = instance.search({index: configuration['index'].name}.merge(arguments))
+    end
+
   end
 
 end
